@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles, Container, Typography } from "@material-ui/core";
+import { Carousel } from "../../Components";
 
 const useStyles = makeStyles(() => ({
   banner: {
@@ -48,6 +49,7 @@ const Banner = () => {
             All your favorite Crypto Currency at one place
           </Typography>
         </div>
+        <Carousel />
       </Container>
     </div>
   );
