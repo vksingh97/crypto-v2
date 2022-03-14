@@ -14,7 +14,7 @@ const Header = () => {
       <Container>
         <Toolbar>
           <Typography>My BTC</Typography>
-          <Select variant="outlined" style={}>
+          <Select variant="outlined">
             <MenuItem>USD</MenuItem>
             <MenuItem>INR</MenuItem>
           </Select>
