@@ -35,7 +35,6 @@ const Carousel = () => {
     const { data } = await axios.get(TrendingCoins(currency));
     setTrending(data);
   };
-  console.log(trending);
   useEffect(() => {
     fetchTrendingCoins();
   }, [currency]);
@@ -53,7 +52,12 @@ const Carousel = () => {
         <span>
           {coin?.symbol}
           &nbsp;
-          <span style={{ color: profit > 0 ? "rgb(14,203,129)" : "red" }}>
+          <span
+            style={{
+              color: profit > 0 ? "rgb(14,203,129)" : "red",
+              fontWeight: 500,
+            }}
+          >
             {profit && "+"} {coin?.price_change_percentage_24h?.toFixed(2)}%
           </span>
         </span>
