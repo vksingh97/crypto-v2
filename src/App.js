@@ -2,7 +2,8 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header, Homepage, CoinPage } from "./Components";
 import { makeStyles } from "@material-ui/core";
-
+import { Buffer } from "buffer";
+global.Buffer = Buffer;
 function App() {
   const useStyles = makeStyles(() => ({
     App: {
