@@ -132,7 +132,6 @@ const CoinPage = () => {
         </div>
       </div>
       <div>
-        {/* {chart} */}
         <CoinInfo coin={coin} />
       </div>
     </div>
