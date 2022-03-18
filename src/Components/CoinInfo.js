@@ -56,7 +56,6 @@ const CoinInfo = ({ coin }) => {
   const useStyles = makeStyles((theme) => ({
     container: {
       width: "900px",
-      //height: "1000px",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -64,13 +63,13 @@ const CoinInfo = ({ coin }) => {
       marginTop: 25,
       padding: 40,
       [theme.breakpoints.down("md")]: {
-        width: "600px",
+        width: "700px",
         marginTop: 0,
         padding: 20,
         paddingTop: 0,
       },
       [theme.breakpoints.down("sm")]: {
-        width: "400px",
+        width: "375px",
         marginTop: 0,
         padding: 20,
         paddingTop: 0,
